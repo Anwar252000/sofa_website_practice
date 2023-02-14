@@ -1,0 +1,47 @@
+/* Gallery Page Style Sheet */
+
+.gallery-mainbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 15px;
+    box-shadow: 1px 1px 5px gray;
+}
+
+.g-cards{
+    display: flex;
+}
+
+.g-cards .g-card{
+    box-shadow: 1px 1px 15px rgb(61, 55, 55);
+    margin: 55px 10px;
+}
+
+.g-cards img{
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.g-cards img:hover{
+    transform: scale(1.1);
+}
+
+.addtocardbtn{
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    border: 1px solid rgb(102, 78, 78);
+    background-color: rgb(102, 78, 78);
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    border-radius: 3px;
+}
+
+.addtocardbtn:hover{
+    background-color: transparent;
+    border: 1px solid rgb(102, 78, 78);
+    color: black;
+}

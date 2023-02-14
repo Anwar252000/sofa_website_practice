@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/jpg" href="img/icon.jpg">
+    <title>IzSofa | Best Sofa</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+        <div class="logo">
+            <a href=""><img src="img/logo.png" alt="IzSofa Logo"></a>
+        </div>
+            <ul>
+                <li class="navitems"><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+                <li class="navitems"><a href="#gallery"><i class="fa fa-image"></i> Our Gallery</a></li>
+                <li class="navitems"><a href="#collections"><i class="fa fa-free-code-camp"></i> Hot Collection</a></li>
+                <li class="navitems"><a href="#about"><i class="fa fa-address-card"></i> About Us</a></li>
+                <li class="navitems"><a href="#contact"><i class="fa fa-envelope"></i> Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container" id="home">
+            <h1 class="h-primary">
+                IzSofa 
+            </h1>
+            <img src="img/homebg.jpg" alt="">
+        </div>
+    <div class="container" id="gallery">
+        <h1 class="h-primary">
+            Our Gallery
+        </h1>
+        <div class="gallery-mainbox">
+        <h2 class="h-secondry">Find Your Best Choice</h2>   
+        <div class="g-cards"> 
+            <div class="g-card">
+                <img src="img/img1slide.jpg" alt="">
+                <h3 class="h-third">Sofa-1</h3>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, laudantium.</p>
+                <p class="price">$599.99</p>
+            </div>
+            <div class="g-card">
+                <img src="img/img2slide.jpg" alt="">
+                <h3 class="h-third">Sofa-2</h3>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, laudantium.</p>
+                <p class="price">$1199.99</p>
+            </div>
+            <div class="g-card">
+                <img src="img/img3slide.jpg" alt="">
+                <h3 class="h-third">Sofa-3</h3>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, laudantium.</p>
+                <p class="price">$1999.99</p>
+            </div>
+        </div>
+        <a href="gellary.html" target="_blank"><button type="button" class="getmorebtn1">Get More</button></a>
+        </div>
+   </div>
+    <div class="container" id="collections">
+        <h1 class="h-primary">
+            Hot Collections
+        </h1>
+        <div class="collection-mainbox">
+            <h2 class="h-secondry">Find Your Best Hot Collections!</h2> 
+            <div class="c-cards">
+            <div class="c-card">
+                <img src="img/img3slide.jpg" alt="">
+            </div>
+            <div class="c-card">
+                <img src="img/img1slide.jpg" alt="">
+            </div>
+            <div class="c-card">
+                <img src="img/img2slide.jpg" alt="">
+            </div>
+            <div class="c-card">
+                <img src="img/img4slide.jpg" alt="">
+            </div>
+        </div>
+        <a href="collection.html" target="_blank"><button type="button" class="getmorebtn2">Get More</button></a>
+    </div>
+    </div>
+
+    <div class="container" id="about">
+        <h1 class="h-primary">
+            Who We Are
+        </h1>
+        <div id="about-us">
+        <p> IzSofa is the best Company of Sofa making Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores molestias exercitationem quidem cumque obcaecati voluptatibus, ducimus temporibus laboriosam quis neque ipsum commodi libero deserunt veritatis. Amet officiis quae necessitatibus ad vitae voluptates dolorem veritatis recusandae.</p>
+        <p> IzSofa is the best Company of Sofa making Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores molestias exercitationem quidem cumque obcaecati voluptatibus, ducimus temporibus laboriosam quis neque ipsum commodi libero deserunt veritatis. Amet officiis quae necessitatibus ad vitae voluptates dolorem veritatis recusandae.</p>
+        <p> IzSofa is the best Company of Sofa making Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores molestias exercitationem quidem cumque obcaecati voluptatibus, ducimus temporibus laboriosam quis neque ipsum commodi libero deserunt veritatis. Amet officiis quae necessitatibus ad vitae voluptates dolorem veritatis recusandae.</p>
+    </div>
+</div>
+    <div id="contact">
+        <div class="contact-form">
+            <h2 class="contact-heading">
+                Contact Us
+            </h2>
+            <h3 class="contact-heading2">
+                Feel Free To Join Us A Line Below! 
+            </h3>
+        </div>
+        <form action="">
+            <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+            
+            <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+            
+            <label for="phone">Phone: </label>
+                <input type="number" name="phone" id="phone" placeholder="Enter Your Phone Number" required>
+           
+            <label for="msg">Message: </label>
+                <textarea name="msg" id="msg" cols="30" rows="6" placeholder="Your Comments"></textarea>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    </main>
+    <button onclick="topfunction()" id="topcontrol" title="Scroll Back To Top"><i
+        class="fa fa-angle-double-up"></i></button>
+    <footer>
+        <ul>
+            <li title="Facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li title="Youtube"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+            <li title="Instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li title="Twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li title="Google Plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+        </ul>
+        <div class="copyright"><p> &copy; &nbsp2021 All right reserved by &nbsp <a href="#"> ASoftTech & Company&trade;</a></p>
+            <p><i class="fa fa-lock"></i>&nbsp Privacy Policy &nbsp <a href="#"> Terms & Conditions</a></p>        
+        </div>
+        <div class="comp-detail">
+        <p><i class="fa fa-envelope"></i> info@izSofa.org.pk</p>
+        <p><i class="fa fa-phone"></i> +92-3158541273 </p>
+        <p><i class="fa fa-globe"></i> www.izSofa.com </p>
+    </div>
+    </footer>
+</body>
+<script>
+    var mybutton = document.getElementById("topcontrol");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction(){
+        if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200){
+            mybutton.style.display = "block";
+        }
+        else{
+            mybutton.style.display="none";
+        }
+    }
+    function topfunction(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+</html>

@@ -1,0 +1,445 @@
+html{
+    scroll-behavior:smooth;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+/* Header Section */
+
+#navbar{
+    display: flex;
+    position: relative;
+    align-items: center;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(238, 226, 226);
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#navbar .logo{
+    margin: 10px 10px 1px 10px;
+    cursor: pointer;
+}
+
+#navbar img{
+    width: 80px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+.navitems{
+    list-style: none;
+}
+
+.navitems a{
+    text-decoration: none;
+    padding: 2px 15px;
+    margin: 10px 2px;
+    color: rgb(46, 36, 36);
+    border-right: 1px solid black;
+    transition: all 0.3s ease-in-out;
+}
+
+.navitems a:hover{
+    color: rgb(182, 165, 165);
+}
+
+/* Home Section */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+/* Gallery Section */
+
+.gallery-mainbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 15px;
+    box-shadow: 1px 1px 5px gray;
+    background-color: rgba(240, 227, 227, 0.479);
+}
+
+.g-cards{
+    display: flex;
+    align-items: center;
+}
+
+.g-cards .g-card{
+    width: 35%;
+    box-shadow: 1px 1px 15px rgb(61, 55, 55);
+    margin: 55px 10px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.g-cards img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.g-cards img:hover{
+    transform: scale(1.1);
+}
+
+.getmorebtn1{
+    padding: 5px 15px;
+    margin: 5px 0 30px 0;
+    cursor: pointer;
+    color: rgb(82, 72, 72);
+    background-color: white;
+    border: 1px solid rgb(70, 63, 63);
+    transition: all 0.3s ease-in-out;
+}
+
+.getmorebtn1:hover{
+    background-color: rgb(70, 63, 63);
+    color: white;
+}
+
+/* Gallery Cards Price Styling */
+
+.price{
+    color: rgb(20, 18, 18);
+    text-shadow: 4px 4px 12px rgb(226, 217, 217);
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+/* Hot Collection Section */
+
+.collection-mainbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px 8px 10px 8px;
+    box-shadow: 1px 1px 5px gray;
+    padding: 50px 5px;
+    background-color: rgba(240, 227, 227, 0.479);
+}
+
+.c-cards{
+    display: flex;
+}
+
+.c-cards .c-card{
+    box-shadow: 1px 1px 15px rgb(61, 55, 55);
+    margin: 15px 10px;
+}
+
+.c-cards img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.c-cards img:hover{
+    transform:scale(1.1);
+}
+
+.getmorebtn2{
+    padding: 5px 15px;
+    margin: 25px 0 5px 0;
+    cursor: pointer;
+    color: rgb(82, 72, 72);
+    background-color: white;
+    border: 1px solid rgb(70, 63, 63);
+    transition: all 0.3s ease-in-out;
+}
+
+.getmorebtn2:hover{
+    background-color: rgb(70, 63, 63);
+    color: white;
+}
+
+/* About Us Section */
+
+#about-us{
+    box-shadow: 1px 1px 5px gray;
+    margin: 10px 20px 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    padding: 50px;
+}
+
+#about-us::before{
+    content: "";
+    position: absolute;
+    background: url('img/aboutbg.jpeg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: ;
+    opacity: 0.1;
+}
+
+#about-us p{
+    color: black;
+    text-shadow: 2px 2px 5px white;
+    text-align: center;
+}
+
+/* Contact Us Section */
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: relative;
+    justify-content: center;  
+}
+
+#contact::before{
+    content: "";
+    /* background: url('img/contactbg.jpg') no-repeat center center/cover; */
+    background: linear-gradient( #605a69, #899686, #596164, #151718);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+.contact-form{
+    position: relative;
+    width: 60%;
+    margin-top: 30px;
+    
+}
+
+.contact-form::before{
+    content: "";
+    position: absolute ;
+    background: url('img/cfbg.jpg') no-repeat center center/cover;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background: white;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.contact-heading{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin: 20px 15px 0px 15px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.contact-heading2{
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+    margin: 0px 15px 10px 15px;
+    text-shadow: 2px 2px 5px black;
+}
+
+form input{
+    padding: 8px 7px;
+    margin: 1px 25px;
+    border-bottom: 1px solid green;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: transparent;
+
+}
+
+form textarea{
+    padding: 8px 7px;
+    margin: 10px 25px;
+    border: 1px solid green;
+    border-radius: 10px;
+    background-color: transparent;
+
+}
+
+form input[type="submit"]{
+    margin: 10px 25px;
+    border-radius: 10px;
+    border: 1px solid green;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover{
+    background-color: green;
+    color: white;
+}
+
+form label{
+    margin: 10px 25px 1px 25px;
+    color: black;
+
+}
+
+input[type="placeholder"]{
+    color: white;
+}
+
+/* Footer Section */
+
+footer{
+    display: flex;
+    background-color: rgb(80, 70, 70);
+    margin-top: 10px;
+    padding: 30px 10px;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.copyright p{
+    color: white;
+    text-shadow: 4px 4px 12px black;
+}
+
+.copyright p a{
+    color: chartreuse;
+    transition: all 0.2s ease-in-out;
+}
+
+.copyright p a:hover{
+    opacity: 0.5;
+}
+
+footer ul{
+    display: flex;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer li a{
+    text-decoration: none;
+    padding: 4px 10px 0px 10px;
+    border-radius: 4px;
+    color: white;
+    margin: 0 4px;
+    opacity: 0.8;
+    border: 1px solid white; 
+    transition: all 0.3s ease-in-out;   
+    font-size: 17px;
+}
+
+footer li a:hover{
+    color: black;
+    background-color: white;
+}
+
+footer a title{
+    color: white;
+}
+
+.comp-detail{
+    margin-right: 20px;
+    color: white;
+    text-shadow: 4px 4px 12px black;
+}
+
+/* Utility Classes */
+
+.h-primary{
+    color: white;
+    font-size: 3.8rem;
+    margin: 30px 0px;
+    text-shadow: 5px 5px 15px black;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgb(201, 186, 186);
+    border-top: 2px solid rgb(201, 186, 186);
+}
+
+.h-secondry{
+    color: rgb(82, 72, 72);
+    font-size: 2.1rem;
+    margin: 10px 0px;
+    border-bottom: 1px solid rgb(82, 72, 72);
+}
+
+.h-third{
+    color: black;
+    font-size: 1.8rem;
+    text-shadow: 5px 5px 15px gray;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.para{
+    color: rgb(20, 18, 18);
+    text-shadow: 4px 4px 12px rgb(226, 217, 217);
+    text-align: center;
+    padding: 15px 10px;
+}
+
+/* Top Controller Button  */
+
+#topcontrol{
+    color: white;
+    border-radius: 7px;
+    position: fixed;
+    z-index: 99;
+    right: 14px;
+    bottom: 14px;
+    cursor: pointer;
+    border: 1px solid rgba(28, 25, 31, 0.596);
+    background-color: rgba(28, 25, 31, 0.596);
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+#topcontrol:hover{
+    background-color: whitesmoke;
+    border: 1px solid rgba(28, 25, 31, 0.596);
+    color: black;
+}
